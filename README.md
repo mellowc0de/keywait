@@ -25,7 +25,7 @@ or copy `key_wait.py` directly into your codebase.
 ### Basic Example
 
 ```python
-from keywait import KEYWAIT
+from key_wait import KEYWAIT
 
 print("Starting process...")
 KEYWAIT.wait_for_key()
