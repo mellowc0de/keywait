@@ -15,7 +15,7 @@ key-wait provides a simple, reusable way to pause program execution and wait for
 For now, clone the repository or copy the module into your project:
 
 ```bash
-git clone https://github.com/mellowc0de/Key-Wait.git
+git clone https://github.com/mellowc0de/keywait.git
 ```
 
 or copy `key_wait.py` directly into your codebase.
