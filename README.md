@@ -1,2 +1,44 @@
 # Key-Wait
-Key-Wait is a minimal Python library for managing interactive pause points in CLI applications, allowing users to continue or exit cleanly.
+A minimal Python utility for managing interactive pause points in CLI applications.
+
+key-wait provides a simple, reusable way to pause program execution and wait for user input, allowing users to either continue execution or gracefully exit the program.
+
+## Features
+
+- Lightweight and dependency-free
+- Designed for command-line applications
+- Simple continue or quit workflow
+- Easy to import and reuse across projects
+- Clear and predictable behavior
+
+## Installation
+For now, clone the repository or copy the module into your project:
+
+```bash
+git clone https://github.com/mellowc0de/Key-Wait.git
+```
+
+or copy `key_wait.py` directly into your codebase.
+
+## Usage
+
+### Basic Example
+
+```python
+from keywait import KEYWAIT
+
+print("Starting process...")
+KEYWAIT.wait_for_key()
+print("Continuing execution...")
+```
+
+### Behavior
+When `wait_for_key` is called, the user is prompted:
+
+```text
+(c)ontinue or (q)uit...
+```
+
+- Entering `c` allows the program to continue
+- Entering `q` immediately exits the program
+- Any other input will re-prompt until valid input is provided
